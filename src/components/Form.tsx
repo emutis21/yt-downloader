@@ -8,7 +8,7 @@ import { urlSchema } from '../validations/urlSchema'
 import { Button } from './Button'
 import { Input } from './Input'
 
-import '../styles/Form.css'
+import '../styles/form.css'
 
 export const Form: React.FC<FormProps> = ({ handleDownload: handleDownloadProp }) => {
   const {
