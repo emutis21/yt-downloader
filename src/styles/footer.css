@@ -1,0 +1,16 @@
+footer {
+  font-family: 'Roboto', sans-serif;
+  align-self: end;
+  grid-column: full-width !important;
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+footer span {
+  color: #09f;
+  display: block;
+  font-size: clamp(1rem, 1vw, 1.5rem);
+}
