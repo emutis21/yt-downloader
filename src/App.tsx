@@ -7,7 +7,7 @@ import { useSeo } from './hooks/useSeo'
 import { Link } from 'react-router-dom'
 
 const App = () => {
-  const { data, loading, handleDownload } = useDownload()
+  const { data, loading, error, handleDownload } = useDownload()
 
   useSeo({ titleProp: data?.title })
 
@@ -29,6 +29,12 @@ const App = () => {
                 </li>
               ))}
           </ul>
+          {error && (
+            <h2 className='error'>
+              Ha ocurrido un error, por favor intente de nuevo más tarde.
+              <span>{error}</span>
+            </h2>
+          )}
         </section>
       </main>
     </MagicMotion>

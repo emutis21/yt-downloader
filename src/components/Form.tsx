@@ -42,9 +42,9 @@ export const Form: React.FC<FormProps> = ({ handleDownload: handleDownloadProp }
       <Input
         label='Ingrese la URL del vídeo'
         name='url'
-        defaultValue={urlParams}
         type='url'
         register={register}
+        defaultValue={urlParams}
         errors={errors}
       />
       <Button />
