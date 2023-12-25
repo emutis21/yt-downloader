@@ -30,6 +30,11 @@ body {
   display: grid;
   grid-template-columns: [full-width-start] 6% [breakout-start] 6% [content-start] 1fr [content-end] 6% [breakout-end] 6% [full-width-end];
   grid-template-rows: auto 1fr auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: [full-width-start] 2% [breakout-start] 2% [content-start] 1fr [content-end] 2% [breakout-end] 2% [full-width-end];
+    max-height: 100vh;
+  }
 }
 
 #root > * {
@@ -108,9 +113,11 @@ ul {
   background-color: #f00;
   color: #fff;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: clamp(0.9rem, 3vw, 1.5rem);
   text-align: center;
   font-weight: 500;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .error span {

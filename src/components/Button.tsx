@@ -1,9 +1,14 @@
-export const Button = () => {
+import { ButtonProps } from '../types'
+
+import '../styles/loader.css'
+
+export const Button: React.FC<ButtonProps> = ({ loading }) => {
+
   return (
     <button>
-      <div className='button' data-tooltip='Deacargar'>
+      <div className='button' data-tooltip={loading ? 'Pronto...' : 'Descargar'}>
         <div className='button-wrapper'>
-          <div className='text'>Descargar</div>
+          <span className='text'>Descargar</span>
           <span className='icon'>
             <svg
               xmlns='http://www.w3.org/2000/svg'

@@ -15,4 +15,9 @@ export interface Data extends Inputs {
 
 export interface FormProps {
   handleDownload: (url: string) => Promise<void>
+  loading: boolean
+}
+
+export interface ButtonProps {
+  loading: boolean
 }

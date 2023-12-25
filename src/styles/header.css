@@ -1,10 +1,9 @@
 .card-title {
   color: hsl(0, 100%, 50%);
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.6rem, 3vw, 3rem);
   line-height: normal;
   font-weight: 700;
 }
-
 
 .arrow {
   width: 24px;

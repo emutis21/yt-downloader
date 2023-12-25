@@ -15,7 +15,7 @@ const App = () => {
     <MagicMotion>
       <main>
         {data?.info && data.info.length > 0 && <iframe src={`${data?.url}`} title='video' />}
-        <Form handleDownload={handleDownload} />
+        <Form handleDownload={handleDownload} loading={loading} />
         <section className='section-info'>
           {loading ? <Loader /> : null}
           <ul>
@@ -29,7 +29,7 @@ const App = () => {
                 </li>
               ))}
           </ul>
-          {error && (
+          {!loading && error && (
             <h2 className='error'>
               Ha ocurrido un error, por favor intente de nuevo más tarde.
               <span>{error}</span>

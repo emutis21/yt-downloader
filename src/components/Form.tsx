@@ -10,7 +10,10 @@ import { Input } from './Input'
 
 import '../styles/form.css'
 
-export const Form: React.FC<FormProps> = ({ handleDownload: handleDownloadProp }) => {
+export const Form: React.FC<FormProps> = ({ 
+  handleDownload: handleDownloadProp,
+  loading
+}) => {
   const {
     register,
     handleSubmit,
@@ -47,7 +50,7 @@ export const Form: React.FC<FormProps> = ({ handleDownload: handleDownloadProp }
         defaultValue={urlParams}
         errors={errors}
       />
-      <Button />
+      <Button loading={loading} />
     </form>
   )
 }
