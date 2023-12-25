@@ -32,7 +32,7 @@ To run this project, follow these steps:
 
 ## Demo
 
-[See video](public/assets/Youtube-Downloader.mp4)
+[See video](/assets/Youtube-Downloader.mp4)
 
 ## Contributions
 
