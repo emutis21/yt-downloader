@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HJGXCP75FZG7Z7V5E8ES59H5
-  version: v2.0
----
-
 # YouTube Downloader Project
 
 This is an educational project demonstrating how to download YouTube videos using React and TypeScript.
@@ -36,9 +30,9 @@ To run this project, follow these steps:
 3. Run `npm install` to install the dependencies.
 4. Run `npm start` to start the development server.
 
-# Demo
+## Demo
 
-[See video](/public/assets/Youtube-Downloader.mp4)
+[See video](public/assets/Youtube-Downloader.mp4)
 
 ## Contributions
 
