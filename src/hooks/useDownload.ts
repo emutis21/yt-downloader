@@ -10,7 +10,7 @@ export const useDownload = () => {
     try {
       setLoading(true)
 
-      const response = await fetch(`http://localhost:3000/download?url=${urlParams}`)
+      const response = await fetch(`https://6mlhw0ll-3000.use2.devtunnels.ms/download?url=${urlParams}`)
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
       }
