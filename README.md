@@ -38,7 +38,7 @@ To run this project, follow these steps:
 4. Run `npm start` to start the development server.
 
 ## Demo
-![Watch video](/public/assets/Youtube-Downloader.mp4)
+[Watch video](/public/assets/Youtube-Downloader.mp4)
 
 ## Contributions
 
