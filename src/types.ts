@@ -1,3 +1,14 @@
+import { FieldErrors, UseFormRegister } from 'react-hook-form'
+
+export interface InputProps {
+  name: keyof Inputs
+  register: UseFormRegister<Inputs>
+  defaultValue?: string
+  label: string
+  type: string
+  errors: FieldErrors<Inputs>
+}
+
 export type Inputs = {
   url: string
 }
