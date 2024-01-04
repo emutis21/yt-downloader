@@ -47,7 +47,7 @@ const App = () => {
             <h2 className='error'>
               Ha ocurrido un error, por favor intente de nuevo más tarde.
               <span>{error}</span>
-              <button onClick={handleReload}>Recargar</button>
+              <button className='btn' onClick={handleReload}>Recargar</button>
             </h2>
           )}
         </section>
